@@ -6,11 +6,6 @@ import apikey from '@/config/apikey';
 import { SearchButton } from '@/components/home_page/SearchButton';
 import { useKakaoMap } from '@/hooks/useKakaoMap';
 import { RoomCreateButton } from '@/components/home_page/RoomCreateButton';
-declare global {
-  interface Window {
-    kakao: any;
-  }
-}
 
 const KakaoMapCssFix = createGlobalStyle`
   #kakaoMap img { max-width: none !important; }
